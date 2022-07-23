@@ -41,7 +41,7 @@ if __name__ == "__main__":
                 print(f"Error downloading {game_name} ({game_id}), continuing...")
     
     json_files = os.listdir(json_dir)
-    for i, file_name in enumerate(json_files), 1):
+    for i, file_name in enumerate(json_files, 1):
         inp_path = os.path.join(json_dir, file_name)
         out_path  = os.path.join(args.saveDir, f"{os.path.splitext(file_name)[0]}.csv")
         print(f"[{i} of {len(json_files)}] Converting {file_name} to CSV format...")
